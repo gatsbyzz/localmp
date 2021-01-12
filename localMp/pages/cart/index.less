@@ -1,0 +1,117 @@
+page{
+  padding-bottom: 90rpx;
+}
+.address_row{
+  padding: 20rpx;
+  border-bottom: 1rpx solid orangered;
+}
+.address_info {
+  padding: 20rpx;
+  height: 30rpx;
+  border-bottom: 1rpx solid orangered;
+}
+.cart_section{
+  .cart_title{
+    padding: 20rpx;
+    font-size: 30rpx;
+    border-bottom: 1rpx solid orangered;
+  }
+  .cart_main {
+    .item{
+      padding: 10rpx;
+      border-bottom: 1rpx solid var(--themeColor);
+      display: flex;
+      .chk_wrap {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+      }
+      .img_wrap{
+        display: flex;
+        flex: 2;
+        justify-content: center;
+        align-items: center;
+        image{
+          width: 90%;
+          // height: 80rpx;
+        }
+      }
+      .info_wrap{
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .goods_name{
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+        }
+        .goods_price_wrap{
+          display: flex;
+          justify-content: space-between;
+          .goods_price{
+            font-size: 40rpx;
+            color: orangered;
+          }
+          .goods_inc{
+            display: flex;
+            .num_edit{
+              height: 55rpx;
+              width: 55rpx;
+              border: 1rpx solid #ccc;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .goods_num{
+              height: 55rpx;
+              width: 55rpx;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footer_tool{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 90rpx;
+  width: 100vw;
+  display:flex;
+  background-color: #fff;
+  border-top: 1rpx solid red;
+  .all_chk_wrap{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .total_price_wrap{
+    flex: 4;
+    padding-right: 10rpx;
+    text-align: right;
+    .total{
+      .price_text{
+        color: red;
+        font-size: 32rpx;
+      }
+    }
+  }
+  .payoff_wrap{
+    flex: 3;
+    background-color: red;
+    color: #fff;
+    font-size: 32rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+}

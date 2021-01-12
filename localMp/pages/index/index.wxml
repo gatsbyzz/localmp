@@ -1,0 +1,44 @@
+<view>
+  <!-- 搜索 -->
+  <SearchInput></SearchInput>
+  <!-- 轮播 -->
+  <view class="swiperBox">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+      <block wx:for="{{swiperlist}}" wx:key="*this">
+        <swiper-item>
+          <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+            <image class="swiper_img" src="{{item.image_src}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 导航 -->
+  <view class="nav_box">
+    <navigator wx:for="{{catlist}}" wx:key="name" class="nav_cat" target="" url="" hover-class="navigator-hover" open-type="navigate">
+      <image class="catimg" src="{{item.image_src}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    </navigator>
+  </view>
+  <!-- 楼层 -->
+  <view class="floor_box">
+    <view 
+    wx:for="{{floorlist}}"
+    wx:key="floor_title"
+    class="floor_group">
+      <view class="floor_title">
+        <image class="" src="{{item.floor_title.image_src}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+      </view>
+      <view class="floor_content">
+        <navigator
+        wx:for="{{item.product_list}}"
+        wx:key="name"
+        wx:for-item="itemInner"
+        class="" >
+          <image class="" src="{{itemInner.image_src}}" mode="{{index === 0 ? 'widthFix' : 'scaleToFill'}}" lazy-load="false" binderror="" bindload="" />
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
+  

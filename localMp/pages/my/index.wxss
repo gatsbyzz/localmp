@@ -1,0 +1,99 @@
+page {
+  background: #cecece;
+}
+.user_info_wrap {
+  height: 45vh;
+  background-color: var(--themeColor);
+  position: relative;
+  overflow: hidden;
+}
+.user_info_wrap .user_img_wrap {
+  position: relative;
+}
+.user_info_wrap .user_img_wrap .user_bg {
+  height: 45vh;
+  filter: blur(10rpx);
+}
+.user_info_wrap .user_img_wrap .userinfo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  top: 30%;
+}
+.user_info_wrap .user_img_wrap .userinfo .head {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_img_wrap .userinfo .name {
+  color: #fff;
+  margin-top: 40rpx;
+  font-size: 40rpx;
+}
+.user_info_wrap .user_btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  border: 1px solid greenyellow;
+  border-radius: 20rpx;
+  color: greenyellow;
+  padding: 10rpx 20rpx;
+  font-size: 40rpx;
+}
+.user_content {
+  position: relative;
+}
+.user_content .user_main {
+  position: absolute;
+  top: -40rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 90%;
+  width: 90%;
+}
+.user_content .user_main .histroy_wrap {
+  display: flex;
+  padding: 20rpx;
+  background-color: #fff;
+}
+.user_content .user_main .histroy_wrap navigator {
+  flex: 1;
+  padding: 10rpx 2rpx;
+  text-align: center;
+}
+.user_content .user_main .histroy_wrap navigator .his_name {
+  color: red;
+}
+.user_content .user_main .orders_wrap {
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 20rpx;
+}
+.user_content .user_main .orders_wrap .order_title {
+  padding: 15rpx;
+  border-bottom: 1px solid gainsboro;
+}
+.user_content .user_main .orders_wrap .order_content {
+  display: flex;
+  padding: 10rpx;
+}
+.user_content .user_main .orders_wrap .order_content navigator {
+  flex: 1;
+  padding: 10rpx 2rpx;
+  text-align: center;
+}
+.user_content .user_main .orders_wrap .order_content navigator .iconfont {
+  color: var(--themeColor);
+  font-size: 40rpx;
+}
+.user_content .user_main .orders_wrap .order_content navigator .order_name {
+  margin-top: 10rpx;
+  color: red;
+}
+.user_content .user_main .address_wrap {
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 20rpx;
+}

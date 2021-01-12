@@ -1,0 +1,100 @@
+page{
+  background: #cecece;
+}
+.user_info_wrap{
+  height: 45vh;
+  background-color: var(--themeColor);
+  position: relative;
+  overflow: hidden;
+  .user_img_wrap{
+    position: relative;
+    .user_bg{
+      height: 45vh;
+      // 高斯模糊
+      filter: blur(10rpx);
+    }
+    .userinfo{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      top: 30%;
+      .head{
+        width: 180rpx;
+        height: 180rpx;
+        border-radius: 50%;
+      }
+      .name{
+        color: #fff;
+        margin-top: 40rpx;
+        font-size: 40rpx;
+      }
+    }
+  }
+  .user_btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    border: 1px solid greenyellow;
+    border-radius: 20rpx;
+    color: greenyellow;
+    padding: 10rpx 20rpx;
+    font-size: 40rpx;
+  }
+}
+.user_content{
+  position: relative;
+  .user_main{
+    position: absolute;
+    top: -40rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 90%;
+    width: 90%;
+    .histroy_wrap{
+      display: flex;
+      padding: 20rpx;
+      background-color: #fff;
+      navigator{
+        flex: 1;
+        padding: 10rpx 2rpx;
+        text-align: center;
+        .his_name{
+          color: red;
+        }
+      }
+    }
+    .orders_wrap{
+      margin-top: 20rpx;
+      background-color: #fff;
+      padding: 20rpx;
+      .order_title{
+        padding: 15rpx;
+        border-bottom: 1px solid gainsboro;
+      }
+      .order_content{
+        display: flex;
+        padding: 10rpx;
+        navigator{
+          flex: 1;
+          padding: 10rpx 2rpx;
+          text-align: center;
+          .iconfont {
+            color: var(--themeColor);
+            font-size: 40rpx;
+          }
+          .order_name{
+            margin-top: 10rpx;
+            color: red;
+          }
+        }
+      }
+    }
+    .address_wrap{
+      margin-top: 30rpx;
+      background-color: #fff;
+      padding: 20rpx;
+    }
+  }
+}
