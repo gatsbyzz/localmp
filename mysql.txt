@@ -1,0 +1,5 @@
+1 sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf  
+bind-address = 127.0.0.1
+2 sudo netstat -tap | grep mysql
+3 mysql登陆后命令 grant all privileges on *.* to root@"%" identified by "密码";
+flush privileges;
